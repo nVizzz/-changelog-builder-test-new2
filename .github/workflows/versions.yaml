@@ -38,4 +38,4 @@ jobs:
         with:
           body: ${{ steps.github_changelog.outputs.changelog }}
           tag_name: ${{ steps.bump_version.outputs.new_tag }}
-          release_name: Release ${{ steps.bump_version.outputs.new_tag }}
+          release_name: Release ${{ steps.bump_version.outputs.new_tag }} ${{ steps.date.outputs.date }}
