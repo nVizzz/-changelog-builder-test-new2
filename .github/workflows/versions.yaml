@@ -1,6 +1,9 @@
 name: Version Management
 
 on:
+  label:
+    types:
+      - created
   push:
     branches:
       - main
